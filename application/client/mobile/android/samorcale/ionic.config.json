@@ -1,0 +1,7 @@
+{
+  "name": "samorcale",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
