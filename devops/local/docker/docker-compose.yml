@@ -225,7 +225,7 @@ services:
     image: systementry-0624
     container_name: systementry-0624
     ports: 
-      - 8010:8010
+      - 8012:8012
     env_file: .env
     depends_on:
       - mongo
@@ -244,7 +244,7 @@ services:
     image: orcale-0624
     container_name: orcale-0624
     ports: 
-      - 8011:8011
+      - 8013:8013
     env_file: .env
     depends_on:
       - mongo

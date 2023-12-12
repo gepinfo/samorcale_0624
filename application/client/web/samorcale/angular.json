@@ -21,7 +21,8 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -30,8 +31,8 @@
               "src/assets"
             ],
             "styles": [
-"node_modules/ngx-toastr/toastr.css",
-"node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css", 
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,7 +93,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",

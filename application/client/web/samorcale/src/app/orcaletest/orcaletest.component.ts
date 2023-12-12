@@ -12,6 +12,7 @@ import { OrcaletestService } from './orcaletest.service';
 })
 
 export class OrcaletestComponent implements OnInit {
+    columnDefs: any = [{ headerName: 'column_6', field: ''  },];
     public sample:any = {
         created_date: '',
         created_by: '',
@@ -20,6 +21,10 @@ export class OrcaletestComponent implements OnInit {
         name: '',
         email: '',
     }
+    paginationPageSize = 10;
+ 	page=1;
+ 	rowData: any[] = [];
+ 	rowIndex: Number = 0;
 
 
 

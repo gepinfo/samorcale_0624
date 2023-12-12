@@ -57,14 +57,14 @@ service:
   systementry: 
     name: systementry
     type: NodePort
-    port: 8010
-    targetPort: 8010
+    port: 8012
+    targetPort: 8012
 
   orcale: 
     name: orcale
     type: NodePort
-    port: 8011
-    targetPort: 8011
+    port: 8013
+    targetPort: 8013
 
 
 deployment:

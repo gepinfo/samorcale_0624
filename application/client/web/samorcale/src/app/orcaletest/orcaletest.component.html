@@ -1,32 +1,4 @@
 <h2 class="screen-align">Orcaletest</h2>
-<nav id="ighf" data-gjs="navbar" class="gdp-row gpd-grid sticky ">
-    <div id="ik48" class="gpd-clm gpd-cell ">
-        <div id="ij0o8m" class="gdp-row gpd-grid ">
-            <div id="template-i2uji" class="">
-                <div id="i8h3sg" class="gpd-clm gpd-cell ">
-                    <img id="igjp1x" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/8762113d99a84fa5baf2345306d4f0c3_hamburger3.png"
-                    class="" />
-                </div>
-            </div>
-            <div id="ip9j7w" class="gpd-clm gpd-cell ">
-                <img id="i4dr2" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/dad97ef59d704ea0b66e4e5416c67f0a_new_logo_gep.png"
-                class="" />
-            </div>
-            <div id="template-isbru" class="button btn btn-primary ">Send</div>
-        </div>
-    </div>
-    <img id="template-ibtki" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+"
-    class="" />
-    <div id="mySidenav" data-gjs="navbar-items" class="sidenav ">
-        <div [routerlink]="['javascript:void(0)']" id="template-if7ki" class="closebtn ">
-            <div id="ibuiwl" class="gpd-clm gpd-cell ">
-                <img id="imvflv" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/cdca723990474ba9ba33337d35ef399d_close.png"
-                class="" />
-            </div>
-        </div>
-        <div id="MainMenu" class=""></div>
-    </div>
-</nav>
 <div id="template-ixk19" class="gjs-row">
     <div id="template-ith2b" class="gjs-cell">
         <label id="template-if7hu" class="label ">SPECIMEN REGISTRATION</label>
@@ -134,3 +106,37 @@
         <div id="template-i6qugf" class="button btn btn-primary ">REQUESTUNITS</div>
     </div>
 </div>
+<div id="template-ikct5" class="gjs-row">
+    <div id="template-iky0a" class="gjs-cell">
+        <label id="template-i4z7a" class="label ">Investigation</label>
+    </div>
+</div>
+<div name="grid_template-id4x7" class="">
+    <div class="tableBg">
+        <table id="table" class="table table-bordered  table-striped table-curved table-response"
+        data-show-header="true" data-pagination="true" data-id-field="name">
+            <thead class="table table-hover">
+                <tr>
+                    <th *ngFor="let column of columnDefs">{{column.headerName}}</th>
+                </tr>
+            </thead>
+            <tbody class="table-design" *ngIf="rowData.length==0">
+                <td style="text-align: center;" colspan="5">No Data Found</td>
+            </tbody>
+            <tbody class="table-design" *ngIf="rowData.length>0">
+                <tr *ngFor="let values of rowData | slice: (page-1) * paginationPageSize :(page-1) * paginationPageSize + paginationPageSize">
+                    <td>{{ values. }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bottomPage">
+        <div class="text-right">
+            <ngb-pagination class="d-flex justify-content-start" [(page)]="page" [maxSize]="5"
+            [rotate]="true" [pageSize]="paginationPageSize" [collectionSize]="rowData.length"
+            [boundaryLinks]="true"></ngb-pagination>
+        </div>
+    </div>
+    <div id="myGrid" class=""></div>
+</div>
+<div id="myGrid" class="ag-theme-alpine "></div>

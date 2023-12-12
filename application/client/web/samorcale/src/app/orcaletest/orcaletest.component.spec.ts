@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrcaletestComponent } from './orcaletest.component';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 describe('OrcaletestComponent', () => {
@@ -22,6 +23,7 @@ describe('OrcaletestComponent', () => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule, 
         FormsModule, ReactiveFormsModule,
+        NgbPaginationModule,
       ],
       declarations: [ OrcaletestComponent ],
       providers: [ OrcaletestService, 
